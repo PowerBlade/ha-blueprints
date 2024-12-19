@@ -1,12 +1,12 @@
-# Orginal from https://github.com/AramidX/ha-blueprint/blob/4de1fb2c9fe1d96a58f09c28b1d4a7760e0e9d2b/blueprints/tuya/tuya_4button_scene_switch.yaml
+# Orginal from https://github.com/AramidX/ha-blueprint/blob/4de1fb2c9fe1d96a58f09c28b1d4a7760e0e9d2b/blueprints/Loratap/Loratap_4button_scene_switch.yaml
 blueprint:
   name: ZHA - Loratap 4-Button Scene Switch
-  description: Automate your Tuya 4-Button Scene Switch using ZHA events.
+  description: Automate your Loratap 4-Button Scene Switch using ZHA events.
   domain: automation
   input:
-    tuya_4button_scene_switch:
-      name: Tuya 4-Button Scene Switch
-      description: Tuya 4-Button Scene Switch to use
+    Loratap_4button_scene_switch:
+      name: Loratap 4-Button Scene Switch
+      description: Loratap 4-Button Scene Switch to use
       selector:
         device:
           integration: zha
@@ -90,7 +90,7 @@ trigger:
 - platform: event
   event_type: zha_event
   event_data:
-    device_id: !input 'tuya_4button_scene_switch'
+    device_id: !input 'Loratap_4button_scene_switch'
 action:
 - variables:
     command: '{{ trigger.event.data.command }}'   
