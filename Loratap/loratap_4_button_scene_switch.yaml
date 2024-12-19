@@ -1,6 +1,6 @@
 # Orginal from https://github.com/AramidX/ha-blueprint/blob/4de1fb2c9fe1d96a58f09c28b1d4a7760e0e9d2b/blueprints/tuya/tuya_4button_scene_switch.yaml
 blueprint:
-  name: ZHA - Tuya 4-Button Scene Switch
+  name: ZHA - Loratap 4-Button Scene Switch
   description: Automate your Tuya 4-Button Scene Switch using ZHA events.
   domain: automation
   input:
